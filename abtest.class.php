@@ -83,7 +83,7 @@ class ABTest
 	
 
 	/*
-	 * runAll(): Marks an impression in the DB for all of the options set with addOption(). Good if you're testing all options simultaneously
+	 * selectAll(): Marks an impression in the DB for all of the options set with addOption(). Good if you're testing all options simultaneously
 	 *
 	 * REQUIRES
 	 * @options			array	The set of options to test against each other defined by addOption()
@@ -112,11 +112,11 @@ class ABTest
 	/*
 	 * markConversion(): increments the number of conversions for a given option by 1
 	 *
-	 * REQUIRES
+	 * PARAMS
 	 * @option_key		str		the test key
 	 *
 	 * RETURNS
-	 * success			bool	Whether or not the query was successful
+	 * success		bool	Whether or not the query was successful
 	 *
 	 */
 	function markConversion($option_key){
@@ -131,13 +131,13 @@ class ABTest
 	
 	
 	/*
-	 * getTestResults($test_name): input a test name and return the results
+	 * getTestResults(): input a test name and return the results
 	 * 
 	 * REQUIRES
 	 * @test_name	str		The name of the test you want to know about
 	 *
 	 * RETURNS
-	 * results		arr		Object containing all database fields for all options in the given test
+	 * results	arr		Object containing all database fields for all options in the given test
 	 *
 	 */
 	function getTestResults(){
