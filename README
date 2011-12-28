@@ -4,7 +4,7 @@ Easily create and track a/b tests
 
 FEATURES
 * Scalable: Test any number of variations against each other
-* Weighted options: give weight to variations you'd like to appear more often
+* Weighted options: Give weight to variations you'd like to appear more often
 * Easy: Super quick config file, very few lines of code required for each test
 
 REQUIRES
